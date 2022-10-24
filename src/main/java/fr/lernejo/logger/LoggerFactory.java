@@ -8,6 +8,6 @@ public class LoggerFactory {
         Predicate<String> condition = message->message.contains("simulation");
         return new ContextualLogger(name,
             new CompositeLogger(new ConsoleLogger(),
-            new FilteredLogger(new FileLogger("logs"), condition)));
+                new FilteredLogger(new FileLogger("logs"), condition)));
     }
 }
