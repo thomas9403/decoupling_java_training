@@ -1,3 +1,4 @@
+
 package fr.lernejo.guessgame;
 
 import fr.lernejo.logger.Logger;
